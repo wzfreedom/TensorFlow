@@ -32,7 +32,7 @@ strps_hosts="localhost:1681"
 strworker_hosts="localhost:1682,localhost:1683"
 
 #定义角色名称
-strjob_name = "ps"
+strjob_name = "worker"
 task_index = 0
 
 
