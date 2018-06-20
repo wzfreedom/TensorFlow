@@ -39,18 +39,18 @@ init = tf.global_variables_initializer()
 with tf.Session() as sess:  
     sess.run(init)  
     
-    print("op1:\n",sess.run([op1,filter1]))#1-1  后面补0
+    print("op1:\n",sess.run([op1,filter1,input]))#1-1  后面补0
     print("------------------")
-    
-    print("op2:\n",sess.run([op2,filter2])) #1-2多卷积核 按列取
-    print("op3:\n",sess.run([op3,filter3])) #1-3
-    print("------------------")   
-    
-    print("op4:\n",sess.run([op4,filter4]))#2-2    通道叠加
-    print("op5:\n",sess.run([op5,filter5]))#2-1        
-    print("------------------")
-  
-    print("op1:\n",sess.run([op1,filter1]))#1-1
-    print("vop1:\n",sess.run([vop1,filter1]))
-    print("op6:\n",sess.run([op6,filter1]))
-    print("vop6:\n",sess.run([vop6,filter1]))    
+#    
+#    print("op2:\n",sess.run([op2,filter2])) #1-2多卷积核 按列取
+#    print("op3:\n",sess.run([op3,filter3])) #1-3
+#    print("------------------")   
+#    
+#    print("op4:\n",sess.run([op4,filter4]))#2-2    通道叠加
+#    print("op5:\n",sess.run([op5,filter5]))#2-1        
+#    print("------------------")
+#  
+#    print("op1:\n",sess.run([op1,filter1]))#1-1
+#    print("vop1:\n",sess.run([vop1,filter1]))
+#    print("op6:\n",sess.run([op6,filter1]))
+#    print("vop6:\n",sess.run([vop6,filter1]))    
