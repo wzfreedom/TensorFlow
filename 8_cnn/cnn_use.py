@@ -39,10 +39,10 @@ init = tf.global_variables_initializer()
 with tf.Session() as sess:  
     sess.run(init)  
     
-    print("op1:\n",sess.run([op1,filter1,input]))#1-1  后面补0
-    print("------------------")
+#    print("op1:\n",sess.run([op1,filter1,input]))#1-1  后面补0
+#    print("------------------")
 #    
-#    print("op2:\n",sess.run([op2,filter2])) #1-2多卷积核 按列取
+    print("op2:\n",sess.run([input,op2,filter2])) #1-2多卷积核 按列取
 #    print("op3:\n",sess.run([op3,filter3])) #1-3
 #    print("------------------")   
 #    
